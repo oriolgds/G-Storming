@@ -1,12 +1,13 @@
 import { Component } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
+import {MatProgressSpinnerModule} from '@angular/material/progress-spinner'; 
 
 @Component({
-  selector: 'app-root',
+  selector: 'loader',
   standalone: true,
-  imports: [RouterOutlet],
-  templateUrl: './app.component.html',
-  styleUrl: './app.component.css'
+  imports: [RouterOutlet, MatProgressSpinnerModule],
+  templateUrl: './loader/loader.html',
+  styleUrl: './loader/loader.css'
 })
 export class AppComponent {
   title = 'G-Storming';
