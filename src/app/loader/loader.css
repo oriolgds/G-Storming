@@ -2,6 +2,8 @@
 #container {
 	background-color: #FFEC9E;
 	position: fixed;
+	top: 0;
+	left: 0;
 	width: 100%;
 	height: 100%;
 	align-content: center;
@@ -9,7 +11,20 @@
 	align-self: center;
 	text-align: center;
 	user-select: none;
+	transform: translateY(0%);
+	animation-name: hideLoader;
+	animation-duration: 1s;
+	animation-fill-mode: forwards;
 
+
+}
+@keyframes hideLoader {
+	0% {
+		transform: translateY(0%);
+	}
+	100% {
+		transform: translateY(100%);
+	}
 }
 h1 {
 	font-family: "Bungee Spice", sans-serif;
